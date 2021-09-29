@@ -1,0 +1,194 @@
+
+{
+  "name": "warn",
+  "permissions": "NONE",
+  "restriction": "1",
+  "_id": "XwfeK",
+  "actions": [
+    {
+      "member": "1",
+      "varName": "",
+      "permission": "ADMINISTRATOR",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "2",
+      "iffalseVal": "16",
+      "name": "Check Member Permissions"
+    },
+    {
+      "condition": "0",
+      "comparison": "2",
+      "value": "1",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "2",
+      "iffalseVal": "11",
+      "name": "Check Parameters"
+    },
+    {
+      "info": "0",
+      "infoIndex": "1",
+      "storage": "1",
+      "varName": "uzytkownik",
+      "name": "Store Command Params"
+    },
+    {
+      "info": "1",
+      "infoIndex": "2",
+      "storage": "1",
+      "varName": "powod",
+      "name": "Store Command Params"
+    },
+    {
+      "user": "1",
+      "varName": "",
+      "info": "10",
+      "storage": "1",
+      "varName2": "autor",
+      "name": "Store User Info"
+    },
+    {
+      "member": "0",
+      "varName": "",
+      "dataName": "iloscwarnow",
+      "changeType": "1",
+      "value": "1",
+      "name": "Control Member Data"
+    },
+    {
+      "member": "0",
+      "varName": "",
+      "dataName": "iloscwarnow",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "liczbawarnow",
+      "name": "Store Member Data"
+    },
+    {
+      "title": "Pomyślnie zwarnowano!",
+      "author": "",
+      "color": "#3B8C29",
+      "url": "",
+      "authorIcon": "",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "timestamp": "false",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "embed",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "message": "**${tempVars(\"autor\")}** zwarnował **${tempVars(\"uzytkownik\")}** za **${tempVars(\"powod\")}** Jest to jego **${tempVars(\"liczbawarnow\")}** ostrzeżenie!",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "channel": "0",
+      "varName2": "",
+      "storage3": "0",
+      "varName3": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "messageContent": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "title": "Błąd!",
+      "author": "",
+      "color": "#8A1A1A",
+      "url": "",
+      "authorIcon": "",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "timestamp": "false",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "blad",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "blad",
+      "message": "Poprawne użycie: warn (Użytkownik) (Powód)",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "blad",
+      "channel": "0",
+      "varName2": "",
+      "storage3": "0",
+      "varName3": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "messageContent": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "title": "Nie posiadasz uprawnień!",
+      "author": "",
+      "color": "#8A1A1A",
+      "url": "",
+      "authorIcon": "",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "timestamp": "false",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "permisje",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "permisje",
+      "message": "Nie posiadasz permisji **Banowanie Członków**!",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "permisje",
+      "channel": "0",
+      "varName2": "",
+      "storage3": "0",
+      "varName3": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "messageContent": "",
+      "name": "Send Embed Message"
+    }
+  ]
+}

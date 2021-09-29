@@ -1,0 +1,153 @@
+
+{
+  "name": "warns",
+  "permissions": "NONE",
+  "restriction": "1",
+  "_id": "hlwTq",
+  "actions": [
+    {
+      "condition": "1",
+      "comparison": "0",
+      "value": "1",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "2",
+      "iffalseVal": "9",
+      "name": "Check Parameters"
+    },
+    {
+      "member": "0",
+      "varName": "",
+      "dataName": "iloscwarnow",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "iloscwarnowuzytkownika",
+      "name": "Store Member Data"
+    },
+    {
+      "member": "0",
+      "varName": "",
+      "info": "21",
+      "storage": "1",
+      "varName2": "uzytkowniksprawdzany",
+      "name": "Store Member Info"
+    },
+    {
+      "member": "0",
+      "varName": "",
+      "info": "16",
+      "storage": "1",
+      "varName2": "uzytkownikavatar",
+      "name": "Store Member Info"
+    },
+    {
+      "title": "Ostrzeżenia ${tempVars(\"uzytkowniksprawdzany\")}",
+      "author": "",
+      "color": "#35B524",
+      "url": "",
+      "authorIcon": "",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "${tempVars(\"uzytkownikavatar\")}",
+      "timestamp": "false",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "embeduzytkownik",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "embeduzytkownik",
+      "message": "Ilość warnów: **${tempVars(\"iloscwarnowuzytkownika\")}**",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "embeduzytkownik",
+      "channel": "0",
+      "varName2": "",
+      "storage3": "0",
+      "varName3": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "messageContent": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "iloscwarnow",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "iloscwarnowautora",
+      "name": "Store Member Data"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "info": "21",
+      "storage": "1",
+      "varName2": "autornick",
+      "name": "Store Member Info"
+    },
+    {
+      "member": "0",
+      "varName": "",
+      "info": "16",
+      "storage": "1",
+      "varName2": "autoravatar",
+      "name": "Store Member Info"
+    },
+    {
+      "title": "Ostrzeżenia ${tempVars(\"autornick\")}",
+      "author": "",
+      "color": "#35B524",
+      "url": "",
+      "authorIcon": "",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "${tempVars(\"autoravatar\")}",
+      "timestamp": "false",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "embedautor",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "embedautor",
+      "message": "Ilość warnów: **${tempVars(\"iloscwarnowautora\")}**",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "embedautor",
+      "channel": "0",
+      "varName2": "",
+      "storage3": "0",
+      "varName3": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "messageContent": "",
+      "name": "Send Embed Message"
+    }
+  ],
+  "comType": "0"
+}
